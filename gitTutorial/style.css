@@ -1,0 +1,441 @@
+  /*display: flex;
+  align-items: flex-start-"Начало";strech-"По умолчанию";flex-end - "Конец";*/
+  /*align-self: center;*
+  /*flex-direction: column-"Выравнивает по оси Y";
+  row - "Выравнивает по оси X"*/
+  /*justify-content: space-around; space-between*/
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+ /* HEAD *//* HEAD *//* HEAD *//* HEAD *//* HEAD *//* HEAD *//* HEAD *//* HEAD *//* HEAD *//* HEAD */
+ 
+.header {
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#d4d5d6;
+  background-color:#262933;
+  height: 106px;
+  width: 100%;
+}
+
+.header_item {
+  width: 1507px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+}
+
+.menu__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  font-size: 12px;
+  padding: 0 19px 0 19px;
+  color:#d4d5d6;
+  text-transform: uppercase;
+}
+
+
+.menu__link {
+  color:#d4d5d6;
+}
+
+/* Переделать на класс header__logo */
+.header__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  font-size: 24px; 
+  text-align: center;
+}
+
+.header__icon {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex: 0.5;
+}
+
+.header__icon_item {
+  width: 43px;
+  height: 28px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Переделать .icon__item */
+.icon__item_type_facebook { 
+  background-image: url(images/header/facebook.png);
+}
+
+.icon__item_type_google-plus {
+  background-image: url(images/header/googel.png);
+}
+
+.icon__item_type_twitter {
+  background-image: url(images/header/twitter.png);
+}
+ /* HEAD *//* HEAD *//* HEAD *//* HEAD *//* HEAD *//* HEAD *//* HEAD *//* HEAD *//* HEAD *//* HEAD */
+
+ /* Banner *//* Banner *//* Banner *//* Banner *//* Banner *//* Banner *//* Banner *//* Banner */
+.banner {
+  width: 100%;
+  height: 652px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner__section {
+  width: 100%;
+  height: 343px;
+  background: url(images/banner/background-image_for_banner.png) no-repeat;
+  background-size: cover;
+  box-sizing: border-box; 
+}
+
+.banner__title {
+  height: 162px;
+  text-align: center;
+  font-size: 38px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner__beyond {
+  width: 986px;
+  height: 335px;
+  background-image: url(images/banner/description_background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 7px solid #fff;
+  color: #c8c8c8 ;
+  box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.25);
+  margin: -182px auto 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner__beyond-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 380px;
+  font-size: 16px;
+  box-sizing: border-box;
+  flex: 1;
+  align-self: center;
+}
+
+/* Переделать на классы */
+.banner__beyond-item {
+  padding-bottom: 25px;
+}
+
+.banner__beyoud-item_group_items1 {
+  font-size: 30px;
+  color: #fff;
+}
+
+.banner__beyond_link{
+  color: #43b5fd;
+}
+
+.banner__beyoud-item_group_items3 {
+  color: #ababab;
+}
+
+.banner__beyond-right {
+  max-width: 456px;
+  height: 335px;
+  background-image: url(images/banner/banner_right.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex: 1;
+}
+
+.banner__button-items {  
+  width: 245px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.banner__button {
+  width: 112px;
+  height: 38px;
+  /* Можно просто 15px */
+  border-radius: 15px;
+  background-color: #2d2f38;
+  border: 2px solid #6b7a86;
+  /* Можо просто #FFF */
+  color: #fff;
+  font-size: large;
+}
+
+/* тут лучше через :first-child */
+.banner__button:first-child {
+  margin-right: 20px;
+}
+
+/* кажется тут просто должны быть стили для лефт, без фокус */
+.banner__button_type_left/*:focus*/ { 
+  background-color: #43b5fd;
+  border: none;
+  outline: none;
+}
+
+.banner__subtitle-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 1507px;
+  height: 140px;
+}
+
+.banner__subtitle {
+  display: flex;
+  align-items: center;
+  color: #b3b9bd;
+  width: 50%;
+}
+
+.banner__subtitle_type_left {
+  justify-content: center;
+  font-size: 24px;
+}
+
+.banner__subtitle_type_right {
+  justify-content: center;
+  font-size: 15px;
+}
+
+.banner__subtitle_link {
+  color: #43b5fd;
+}
+/* Banner *//* Banner *//* Banner *//* Banner *//* Banner *//* Banner *//* Banner *//* Banner */
+
+/* Features *//* Features *//* Features *//* Features *//* Features *//* Features *//* Features */
+
+.features {
+  width: 100%;
+  height: 370px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(images/Features/background_for_Features.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.features__beyond-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 1507px;
+  height: 270px;
+}
+
+
+
+.features__beyond_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.fun {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.features__image {
+  width: 55px;
+  height: 45px;
+}
+
+.features__title {
+  color: #fff;
+}
+.features__child-text {
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+}
+
+
+.features__child-pictures {
+  background-image: url(images/Features/Picture_03.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.features__child-heart {
+  background-image: url(images/Features/camera.png) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.features__child-camera {
+  background-image: url(images/Features/heart_03.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* Features *//* Features *//* Features *//* Features *//* Features *//* Features *//* Features */
+/*Project*//*Project*//*Project*//*Project*//*Project*//*Project*//*Project*//*Project*//*Project*/
+
+.project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.project__beyond-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 1507px;
+}
+
+
+.project__beyond-item_header {
+  color: #848b90;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 110px;
+}
+
+.project__beyond-item_image {
+  border: 3px solid white;
+  width: 306px;
+  margin-right: 20px;
+  box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.25);
+}
+
+.project__beyond-item_image:last-child {
+  margin: 0;
+}
+
+.project__beyond-item_client {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.project__beyond-item_client-item {
+  display: flex;
+  justify-content: center;
+  width: 350px;
+}
+
+.project__beyond-item_client-item-fun {
+  width: 219px;
+  text-align: center; 
+  color: #43b5fd;
+}
+
+.project__beyond-item_client_header {
+  color: #848b90;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.project__beyond-item_client-item_text{
+padding-top: 30px;
+}
+
+.project__beyond-item_client_header1 {
+  padding: 20px 0px 30px 0px;
+}
+
+/*footer*//*footer*//*footer*//*footer*//*footer*//*footer*//*footer*//*footer*//*footer*//*footer*//*footer*//*footer*//*footer*/
+.footer {
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#d4d5d6;
+  background-color:#262933;
+  height: 106px;
+}
+
+.footer__item {
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 50%;
+  text-align: center;
+}
+
+.footer__icon {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  flex: 0.5;
+  width: 50%;
+}
+
+.footer__icon_item {
+  width: 43px;
+  height: 28px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+  
+.footer__icon_item_type_facebook { 
+  background-image: url(images/header/facebook.png);
+}
+
+.footer__icon_item_type_google-plus {
+  background-image: url(images/header/googel.png);
+}
+
+.footer__icon_item_type_twitter{
+  background-image: url(images/header/twitter.png);
+}
+/*footer*//*footer*//*footer*//*footer*//*footer*//*footer*//*footer*//*footer*//*footer*//*footer*//*footer*//*footer*/
